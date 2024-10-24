@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: arial;
+}
+.hero-section{
+   position: relative; 
+}
+.hero-section::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    height:710px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.landing-description{
+    font: 400 20px cursive; 
+    padding: 0px 0px 0px 40px;
+    color: antiquewhite;
+    width: 580px;
+    margin-top: 0px;
+}
+
+.landing-title{
+    font: 900 40px arial;
+    z-index: 2;
+    color: antiquewhite;
+    width: 560px;
+    padding: 120px 0px 0px 40px;
+    margin-bottom: 10px;
+}
+.hero-section div p span{
+    color: rgb(203, 82, 255);
+}
+
+
+.hero-video{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 1263px;
+    object-fit: cover;
+    z-index: -2;
+}
+header{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:10px;
+    padding-right:20px;
+    background: linear-gradient(to left,rgb(19, 0, 28)0%,rgb(46, 0, 79)100%);
+}
+header img{
+    width: 40px;
+}
+.header-title{
+    color: antiquewhite; 
+    -webkit-text-fill-color: antiquewhite;
+    font: 900 20px cursive;
+   
+}
+.header-navigations{
+    display: flex;
+    column-gap: 15px;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.header-navigations div div{
+    margin-top: 3px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: rgb(195, 0, 255);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.services-link div{
+    width: 66px;
+}
+ .about-link div{
+    width: 52px;
+ }
+ .gallery-link div,
+ .contact-link div{
+    width: 56px;
+ }
+ .services-link:hover div,
+ .about-link:hover div ,
+ .gallery-link:hover div,
+ .contact-link:hover div{
+    opacity: 1;
+}
+.cta-button{
+    background-color: transparent;
+    border: 2px solid rgb(195, 0, 255);
+    color: antiquewhite;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 40px; 
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: transform .2s ease-in-out;
+}
+.cta-button:hover{
+    transform: scale(1.04);
+    background-color: rgba(0, 0, 0, 0.3);
+}
